@@ -27,7 +27,7 @@ var ganadasPC = 0;
 
 for (var i=0; i<jugadas; i++){
 
-opcionUsuario = prompt("¿Qué eliges? Priedra: 0 Papel: 1 Tijera: 2",);
+opcionUsuario = prompt("¿Qué eliges? Priedra: 0 -- Papel: 1 o Tijera: 2",);
 
 alert("Elegiste " + opciones[opcionUsuario]);
 alert("PC eligio " + opciones[opcionPC]);
@@ -72,10 +72,10 @@ else
 }
 
 if (ganadasJugador > ganadasPC){
-    document.write (`Ganaste por ${ganadasJugador} x ${ganadasPC}`)
+    document.write (`¡¡Ganaste por ${ganadasJugador} x ${ganadasPC}!!`)
 }
 else if (ganadasJugador < ganadasPC){
-    document.write (`PC gano ${ganadasPC} x ${ganadasJugador}`)
+    document.write (`PC gano ${ganadasPC} x ${ganadasJugador} :(`)
 }
 else (
     document.write (`Empate  ${ganadasJugador} x ${ganadasPC}    `)
